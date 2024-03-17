@@ -1,0 +1,101 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* Apply the same gradient background to the header */
+    background: -webkit-linear-gradient(90deg, #adc893, #c9cacf, #decece);
+    background: linear-gradient(90deg, #adc893, #c9cacf, #decece);
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 30px; /* Increased margin for spacing */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    /* color: #fff; */
+    color: black;
+    font-weight: 12em;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  
+  .text {
+    width: 50%;
+    margin-top: 210px; /* Added margin-top to push content down */
+    margin-left: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .about {
+    margin-top: 15px;
+  }
+  
+  .image {
+    width: 50%;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .intro {
+    margin: 0; /* Remove large margin */
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green; /* Blue button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .text,
+    .image {
+      width: 100%;
+    }
+  }
+  
